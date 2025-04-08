@@ -1,0 +1,48 @@
+.footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.contact {
+    font-family: 'Fuente3', sans-serif;
+    font-size: 1rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 5px;
+    padding: 0 20px;
+}
+
+.social-icons {
+    margin-bottom: 10px;
+}
+
+.social-icon {
+    color: #ffffff;
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+.social-icon:hover {
+    color: #517bdd;
+}
+
+.copyright {
+    font-family: 'Fuente3', sans-serif;
+    font-size: 12px;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }

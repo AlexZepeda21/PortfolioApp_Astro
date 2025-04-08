@@ -19,7 +19,7 @@ nav {
   align-items: center;
 }
 
-a {
+.nav-footer {
   font-family: 'Fuente3', sans-serif;
   font-size: 1.5rem;
   padding: 10px;
