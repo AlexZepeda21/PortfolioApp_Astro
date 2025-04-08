@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: Fuente1;
+    src: url(../assets/fonts/AngelWedding.otf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: Fuente2;
+    src: url(../assets/fonts/BeautifulHouse.otf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: Fuente3;
+    src: url(../assets/fonts/Copeland.otf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: Fuente4;
+    src: url(../assets/fonts/Sivana.otf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

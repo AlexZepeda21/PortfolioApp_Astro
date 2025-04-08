@@ -46,3 +46,16 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+-------------------------------------------------------------------------
+
+## ICONOS USADOS EN EL HEADER
+https://www.flaticon.es/icon-fonts-mas-descargados?brands=1&type=uicon
+
+<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+
+
+## ICONOS USADOS EN EL FOOTER
+https://www.flaticon.es/icon-fonts-mas-descargados?brands=1&type=uicon
+
+<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
