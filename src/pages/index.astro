@@ -5,7 +5,6 @@ import Layout from "../layouts/Layout.astro";
 //Componentes
 import Contactme from "../components/Contactme.astro";
 import BtnContactame from "../components/BtnContactame.astro";
-import "../components/starfield.js";
 //CSS
 import "../styles/global.css";
 import "../styles/components.css";
@@ -14,8 +13,7 @@ import "../styles/index.css";
 //Boostrap
 import "bootstrap/dist/css/bootstrap.min.css";
 ---
-
-
+<script src="../components/moreDown.js"></script>
 <Layout>
     <div class="scroll-container">
         <section class="section s1">
@@ -25,6 +23,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
                     >Full Stack</code
                 >
             </h1>
+
+            <div class="moreDown" id="moreDown">
+                <h1 style="  font-family: 'Fuente1' ; font-size: 4rem;">
+                    Sigue bajando
+                </h1>
+            </div>
         </section>
 
         <section class="section s2">

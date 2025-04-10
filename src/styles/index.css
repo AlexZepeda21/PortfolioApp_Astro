@@ -1,9 +1,18 @@
+/* Secciones */
 .section {
     height: 100vh;
     scroll-snap-align: start;
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
+    text-align: center;
+}
+
+.moreDown {
+    position: relative;
+    z-index: 100;
+    text-align: center;
+    top: 100px;
 }
 
 .s1 {

@@ -1,12 +1,13 @@
 /* From Uiverse.io by MuhammadHasann */ 
 button {
+  font-family: 'Fuente3';
   position: relative;
   padding: 12px 35px;
   background: #000000;
   font-size: 16px;
   font-weight: 500;
   color: #ffffff;
-  border: 1px solid #182884;
+  border: 1px solid #3b4d6d;
   border-radius: 8px;
   box-shadow: 0 0 0 #fec1958c;
   transition: all 0.3s ease-in-out;
@@ -78,74 +79,96 @@ button {
   z-index: -5;
   transition: all 0.8s ease;
 }
+.star-7 {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  width: 5px;
+  height: auto;
+  filter: drop-shadow(0 0 0 #fffdef);
+  z-index: -5;
+  transition: all 0.8s ease;
+}
 
 button:hover {
   background: transparent;
   color: #ffffff;
   box-shadow: 0 0 25px #ffffff;
   border-color : white;
-  border: 3px solid;
+  border: 1px solid;
 }
 
+/* Java */
 button:hover .star-1 {
   position: absolute;
   top: -80%;
-  left: -30%;
+  left: -25%;
   width: 25px;
   height: auto;
-  filter: drop-shadow(0 0 10px #fffdef);
   z-index: 2;
 }
 
+/* JS */
 button:hover .star-2 {
   position: absolute;
   top: -25%;
-  left: 10%;
+  left: 5%;
   width: 15px;
   height: auto;
-  filter: drop-shadow(0 0 10px #fffdef);
   z-index: 2;
 }
 
+/* SQL */
 button:hover .star-3 {
   position: absolute;
-  top: 55%;
+  top: 65%;
   left: 25%;
   width: 5px;
   height: auto;
-  filter: drop-shadow(0 0 10px #fffdef);
   z-index: 2;
 }
 
+/* C# */
 button:hover .star-4 {
   position: absolute;
-  top: 30%;
+  top: 60%;
   left: 80%;
   width: 8px;
   height: auto;
-  filter: drop-shadow(0 0 10px #fffdef);
   z-index: 2;
 }
 
+/* C++ */
 button:hover .star-5 {
   position: absolute;
   top: 25%;
-  left: 115%;
+  left: 110%;
   width: 15px;
   height: auto;
-  filter: drop-shadow(0 0 10px #fffdef);
   z-index: 2;
 }
 
+/* PHP */
 button:hover .star-6 {
   position: absolute;
-  top: 5%;
-  left: 60%;
+  top: -3%;
+  left: 80%;
   width: 0px;
   height: auto;
-  filter: drop-shadow(0 0 10px #fffdef);
   z-index: 2;
 }
+
+
+/* PHP */
+button:hover .star-7 {
+  position: absolute;
+  top: -40%;
+  left: 30%;
+  width: 0px;
+  height: auto;
+  z-index: 2;
+}
+
 
 .fil0 {
   fill: #fffdef;

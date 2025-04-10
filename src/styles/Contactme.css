@@ -17,7 +17,7 @@
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
     max-width: 500px;
     width: 100%;
-    border: 1px solid rgba(72, 108, 179, 0.15);
+    border: 1px solid hwb(220 28% 30% / 0.15);
   }
 
   .form-control {
@@ -37,8 +37,8 @@
   }
 
   .form-control:focus {
-    border-color: #4b83f5;
-    box-shadow: 0 0 10px rgba(75, 131, 245, 0.2);
+    border-color: #ffffff;
+    box-shadow: 0 0 10px rgba(242, 243, 246, 0.2);
     background-color: #222735;
   }
 
