@@ -1,5 +1,8 @@
 ---
 import "../styles/footerStyle.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "../styles/Buttons.css";
+import BtnContactame from "./BtnContactame.astro";
 ---
 
 <link
@@ -8,24 +11,21 @@ import "../styles/footerStyle.css";
 />
 
 <footer class="footer">
-    <span>
-        <p class="contact">
-            manuelzepedagr@gmail.com ||
-            <a href="#"> Contactame por formulario</a>
-        </p>
-    </span>
-
-        <a href="https://www.linkedin.com/in/manuel-zepeda-79383a33a/">
-            LinkedIn
+    <div class="social-icons">
+        <a
+            href="https://www.linkedin.com/in/manuel-zepeda-79383a33a/"
+            class="social-link"
+        >
             <i class="fi fi-brands-linkedin social-icon"></i>
+            LinkedIn
         </a>
-    
-        <a href="https://github.com/AlexZepeda21">
-            GitHub
+        <a href="https://github.com/AlexZepeda21" class="social-link">
             <i class="fi fi-brands-github social-icon"></i>
+            GitHub
         </a>
+    </div>
 
     <p class="copyright">
-        © 2025 Manuel Alexader Zepeda Grijalva. Todos los derechos reservados.
+        © 2025 Manuel Zepeda. Todos los derechos reservados.
     </p>
 </footer>

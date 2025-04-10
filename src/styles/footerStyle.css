@@ -1,33 +1,44 @@
 .footer {
-    background-color: #222;
+    background-color: #000000;
     color: #fff;
-    padding: 20px 0;
+    padding: 3px 0;
     text-align: center;
+    
 }
 
 .contact {
     font-family: 'Fuente3', sans-serif;
     font-size: 1rem;
+    margin-top: 3px;
 }
 
 .container {
     max-width: 1200px;
-    margin: 5px;
-    padding: 0 20px;
+    margin-inline: 15px;
+}
+.social-icons {
+    display: flex;          /* Organiza los enlaces horizontalmente */
+    justify-content: center; /* Centra todos los enlaces */
+    gap: 20px;              /* Espaciado entre cada enlace (LinkedIn y GitHub) */
 }
 
-.social-icons {
-    margin-bottom: 10px;
+.social-link {
+    display: flex;         
+    align-items: center;    
+    text-decoration: none; 
+    color: #ffffff;        
+    gap: 8px;               
+    font-family: 'Fuente3', sans-serif; 
+    font-size: 1rem;  
 }
 
 .social-icon {
-    color: #ffffff;
-    margin-right: 10px;
-    font-size: 25px;
+    font-size: 25px;    
+   margin-top: 8px;
 }
 
-.social-icon:hover {
-    color: #517bdd;
+.social-link:hover {
+    color: #517bdd;         
 }
 
 .copyright {

@@ -1,41 +1,16 @@
 @import "tailwindcss";
 
-@font-face {
-    font-family: Fuente1;
-    src: url(../assets/fonts/AngelWedding.otf) format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: Fuente2;
-    src: url(../assets/fonts/BeautifulHouse.otf) format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: Fuente3;
-    src: url(../assets/fonts/Copeland.otf) format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: Fuente4;
-    src: url(../assets/fonts/Sivana.otf) format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
-html, body {
-    height: 100%;      
-    margin: 0;    
-}
-
+html,
 body {
-    display: flex;       
-    flex-direction: column; 
+    height: 100%;
+    margin: 0;
+    background-image: url("../assets/images/Fondo.jpg");
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
 }
 
 footer {
-    margin-top: auto; 
+    margin-top: auto;
 }
