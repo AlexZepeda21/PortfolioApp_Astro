@@ -1,14 +1,38 @@
 ---
+//Layout
 import Layout from "../layouts/Layout.astro";
+
+//Componentes
+import Contactme from "../components/Contactme.astro";
+import BtnContactame from "../components/BtnContactame.astro";
+import "../components/starfield.js";
+//CSS
 import "../styles/global.css";
 import "../styles/components.css";
 import "../styles/index.css";
+
+//Boostrap
 import "bootstrap/dist/css/bootstrap.min.css";
 ---
 
+
 <Layout>
-    <section class="contenedor-1">
-        <h1 class="capital-tittle"><b>Manuel Zepeda</b></h1>
-        <h1 class="tittle"> Desarrollador <code class="tittle" style="color: aquamarine;">Full Stack</code></h1>
-    </section>
+    <div class="scroll-container">
+        <section class="section s1">
+            <h1 class="capital-tittle"><b>Manuel Zepeda</b></h1>
+            <h1 class="tittle">
+                Desarrollador <code class="tittle" style="color: aquamarine;"
+                    >Full Stack</code
+                >
+            </h1>
+        </section>
+
+        <section class="section s2">
+            <h2 class="tittle">Mis Proyectos</h2>
+        </section>
+
+        <section class="section s3">
+            <Contactme />
+        </section>
+    </div>
 </Layout>

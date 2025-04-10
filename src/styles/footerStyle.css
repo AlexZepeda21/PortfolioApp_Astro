@@ -1,9 +1,13 @@
 .footer {
     background-color: #000000;
+    bottom: 0;
+    width: 100%;
     color: #fff;
-    padding: 3px 0;
     text-align: center;
-    
+    z-index: 100;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro semitransparente */
+    padding: 0px;
 }
 
 .contact {
@@ -12,36 +16,36 @@
     margin-top: 3px;
 }
 
-.container {
-    max-width: 1200px;
-    margin-inline: 15px;
-}
+
 .social-icons {
-    display: flex;          /* Organiza los enlaces horizontalmente */
-    justify-content: center; /* Centra todos los enlaces */
-    gap: 20px;              /* Espaciado entre cada enlace (LinkedIn y GitHub) */
+    display: flex;
+    /* Organiza los enlaces horizontalmente */
+    justify-content: center;
+    /* Centra todos los enlaces */
+    gap: 20px;
+    /* Espaciado entre cada enlace (LinkedIn y GitHub) */
 }
 
 .social-link {
-    display: flex;         
-    align-items: center;    
-    text-decoration: none; 
-    color: #ffffff;        
-    gap: 8px;               
-    font-family: 'Fuente3', sans-serif; 
-    font-size: 1rem;  
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+    gap: 8px;
+    font-family: 'Fuente3', sans-serif;
+    font-size: 1rem;
 }
 
 .social-icon {
-    font-size: 25px;    
-   margin-top: 8px;
+    font-size: 25px;
+    margin-top: 8px;
 }
 
 .social-link:hover {
-    color: #517bdd;         
+    color: #517bdd;
 }
 
 .copyright {
     font-family: 'Fuente3', sans-serif;
-    font-size: 12px;
+    font-size: 11px;
 }

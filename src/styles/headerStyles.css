@@ -1,22 +1,23 @@
-.img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin: 25px;
-}
-
 .header {
+  position: fixed; /* Fija el navbar en la parte superior */
+  top: 0;
+  left: 0;
+  width: 100%; /* Asegura que ocupe todo el ancho */
+  display: flex;
   align-items: center;
   justify-content: space-between;
-  display: flex;
-  width: auto;
-  height: auto;
- 
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.8); /* Fondo semitransparente */
+  color: white;
+  z-index: 100; /* Asegura que esté encima del contenido */
+  backdrop-filter: blur(10px); /* Efecto de difuminado */
 }
 
-.header::after {
-  background: rgba(0,0,0,0.5);
+.img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 nav {
@@ -27,18 +28,12 @@ nav {
 
 .nav-footer {
   font-family: 'Fuente3', sans-serif;
-  font-size: 1.5rem;
-  padding: 10px;
-  color: white;
-  text-decoration: none
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: azure;
+  padding: 5px 10px;
 }
 
 .nav-footer:hover {
   color: #517bdd;
-
-}
-
-i {
-  justify-content: space-between;
-  align-items: center;
 }
