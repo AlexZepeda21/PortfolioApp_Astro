@@ -1,8 +1,10 @@
-.tittle {
+.tittle-contact {
+  font-family: 'Fuente4';
     font-size: 1rem;
+    font-weight: bold;
   }
 
-  .form-wrapper {
+  .form-wrapper { 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,7 +14,7 @@
 
   .custom-card {
     background-color: #12141b;
-    padding: 40px;
+    padding: 60px;
     border-radius: 16px;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
     max-width: 500px;
@@ -46,7 +48,7 @@
     margin-bottom: 1.5rem;
   }
 
-  @media (max-width: 576px) {
+  @media (max-width: 500px) {
     .custom-card {
       padding: 20px;
     }

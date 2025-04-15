@@ -1,18 +1,13 @@
-html,
-body {
-  min-height: 100vh; 
-  height: 100%;
+@import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css');
+@import "tailwindcss";
+
+html, body {
+  min-height: 100vh;
   margin: 0;
   padding: 0;
   flex-direction: column;
   background: linear-gradient(to bottom, #070d1e 0%, #0a0f2b 50%, #05070c 100%);
-  background-image:
-    linear-gradient(to bottom, #0a0f1c 0%, #0c1324 50%, #05070c 100%),
-    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.015) 0px, transparent 1px, transparent 20px),
-    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.015) 0px, transparent 1px, transparent 20px);
-  background-size: cover;
   background-position: center;
-  background-attachment: fixed;
 }
 
 #starsCanvas {
@@ -27,6 +22,5 @@ body {
 
 html{
   background: url('../assets/images/star-pattern.png') repeat, #0a0f1c;
-  background-size: cover;
  overflow-x: hidden;
 }

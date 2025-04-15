@@ -1,18 +1,7 @@
-@import "tailwindcss";
-
 .capital-tittle {
-    
-    text-align: center;
-    color: aliceblue;
-    font-family: 'Fuente4', sans-serif;
-    font-size: 4rem;
-    
+    font-family: 'Fuente4', sans-serif;    
 }
 
 .tittle {
-    text-align: center;
-    color: aliceblue;
     font-family: 'Fuente4', sans-serif;
-    font-size: 1.5rem;
-    
 }

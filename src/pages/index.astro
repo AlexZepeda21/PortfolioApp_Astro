@@ -5,6 +5,7 @@ import Layout from "../layouts/Layout.astro";
 //Componentes
 import Contactme from "../components/Contactme.astro";
 import BtnContactame from "../components/BtnContactame.astro";
+
 //CSS
 import "../styles/global.css";
 import "../styles/components.css";
@@ -12,31 +13,75 @@ import "../styles/index.css";
 
 //Boostrap
 import "bootstrap/dist/css/bootstrap.min.css";
+
+//Img import
+import miImg from "../assets/images/miImg.png";
 ---
-<script src="../components/moreDown.js"></script>
+
 <Layout>
-    <div class="scroll-container">
-        <section class="section s1">
-            <h1 class="capital-tittle"><b>Manuel Zepeda</b></h1>
-            <h1 class="tittle">
-                Desarrollador <code class="tittle" style="color: aquamarine;"
-                    >Full Stack</code
-                >
-            </h1>
+    <section class="section s1">
+        <div class="container">
+            <div class="row">
+                <div class="col column1">
+                    <img src={miImg.src} class="img" />
+                    <div class="disponible">
+                        <a
+                            href="https://www.linkedin.com/in/manuel-zepeda-79383a33a/"
+                            style="text-decoration: none; color:white; opacity:75%;"
+                        >
+                            Disponible para trabajar
+                        </a>
+                    </div>
+                </div>
 
-            <div class="moreDown" id="moreDown">
-                <h1 style="  font-family: 'Fuente1' ; font-size: 4rem;">
-                    Sigue bajando
-                </h1>
+                <div class="col column2">
+                    <h1 class="capital-tittle" style="font-size : 4rem;">
+                        Manuel Zepeda
+                    </h1>
+                    <h3 class="tittle">
+                        Desarrollador <code
+                            class="tittle"
+                            style="color: aquamarine;">Full Stack</code
+                        >
+                    </h3>
+                </div>
             </div>
-        </section>
+        </div>
+        <br />
+        <div class="container">
+            <p>
+                Bienvenido a mi Portfolio, continua bajando para ver mis
+                proyectos, <br /> si las estrellas te resultan molestas puedes quitarlas
+            </p>
+        </div>
+    </section>
 
-        <section class="section s2">
+    <section class="section s2">
+        <div class="container">
             <h2 class="tittle">Mis Proyectos</h2>
-        </section>
+        </div>
+    </section>
 
-        <section class="section s3">
-            <Contactme />
-        </section>
-    </div>
+    <section class="section s3">
+        <div class="container">
+            <h2 class="tittle">Juntos</h2>
+        </div>
+    </section>
+
+    <section class="section s4">
+        <div class="container">
+            <h2 class="tittle">Mi experiencia</h2>
+        </div>
+    </section>
+
+    <section class="section s5">
+        <div class="container">
+            <div class="row">
+                <h2 class="tittle" style="text-align: center; color:white;">
+                    Contactame
+                </h2>
+                <Contactme />
+            </div>
+        </div>
+    </section>
 </Layout>
