@@ -5,6 +5,8 @@ import Layout from "../layouts/Layout.astro";
 //Componentes
 import Contactme from "../components/Contactme.astro";
 import BtnContactame from "../components/BtnContactame.astro";
+import BtnGmail from "../components/BtnGmail.astro";
+import BtnLinkedin from "../components/BtnLinkedin.astro";
 
 //CSS
 import "../styles/global.css";
@@ -48,7 +50,7 @@ import miImg from "../assets/images/miImg.png";
             </div>
         </div>
         <br />
-        <div class="container">
+        <div class="container" style="opacity : 75%;">
             <p>
                 Bienvenido a mi Portfolio, continua bajando para ver mis
                 proyectos, <br /> si las estrellas te resultan molestas puedes quitarlas
@@ -63,14 +65,38 @@ import miImg from "../assets/images/miImg.png";
     </section>
 
     <section class="section s3">
-        <div class="container">
-            <h2 class="tittle">Juntos</h2>
+        <div class="container margins3">
+            <div class="together">
+                <div class="row">
+                    <div class="col colu1-s3">
+                        <h2
+                            style="font-family: 'Fuente4';font-size: 2rem; color:white;"
+                        >
+                            ¿Tienes algun proyecto?
+                        </h2>
+                        <h4
+                            class="tittle"
+                            style="font-size: 1rem; color:white;"
+                        >
+                            No trabajes solo, trabaja conmigo
+                        </h4>
+                    </div>
+                    <div class="col colu2-s3">
+                        <BtnGmail />
+                        <BtnLinkedin />
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <section class="section s4">
         <div class="container">
             <h2 class="tittle">Mi experiencia</h2>
+            <div class="container margin-prub">
+                <h1>HOLA BIENVENIDO</h1>
+                <h1>Hola bienvenido</h1>
+            </div>
         </div>
     </section>
 

@@ -13,10 +13,10 @@
   }
 
   .custom-card {
-    background-color: #12141b;
+    background-color: #12141b4b;
     padding: 60px;
     border-radius: 16px;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.265);
     max-width: 500px;
     width: 100%;
     border: 1px solid hwb(220 28% 30% / 0.15);

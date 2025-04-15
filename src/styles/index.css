@@ -7,8 +7,19 @@ p {
   font-family: 'Fuente3';
   text-align: center;
   font-size: 1.3rem;
-  line-height: 1.2;       /* Altura entre líneas para mejor lectura */
+  line-height: 1.2;
 }
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  /* separa las columnas */
+  text-align: center;
+}
+
 
 /* Section1 ------------------------------------------------------  */
 .s1 {
@@ -16,18 +27,18 @@ p {
   align-content: center;
 }
 
-.container {
-  display: flex;
-  justify-content: center;
+.column1,
+.column2 {
+  flex: 0 0 auto;
+  /* evita que se estiren */
+  max-width: 400px;
 }
 
 .column1 {
-  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 50%;
 }
 
 .img {
@@ -54,28 +65,69 @@ p {
 }
 
 .disponible:hover {
-  transform: scale(1.05); /* Aumenta 5% su tamaño visual */
-}
-
-
-.column2 {
-  width: 50%;
+  transform: scale(1.05);
+  /* Aumenta 5% su tamaño visual */
 }
 
 /* ---------------------------------------------------------------- */
 
 
+
+/* Section2 ------------------------------------------------------  */
+
 .s2 {}
 
+/* ---------------------------------------------------------------- */
 
 
+
+
+/* Section3 ------------------------------------------------------  */
 
 .s3 {}
 
+.margins3 {
+  width: 50%;
+}
+
+.together {
+  border: 2px solid;
+  border-radius: 15px;
+  padding: 50px 25px;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.264);
+}
+
+.colu1-s3 {
+
+}
+
+.colu2-s3 {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+
+/* ---------------------------------------------------------------- */
 
 
+
+/* Section4 ------------------------------------------------------  */
 .s4 {}
 
+.margin-prub {
+  border: 1px solid;
+  padding: 10px;
+  width: 50%
+}
+
+/* ---------------------------------------------------------------- */
 
 
-.s5 {}
+
+/* Section5 ------------------------------------------------------  */
+.s5 {
+  width: 100%;
+}
+
+/* ---------------------------------------------------------------- */
