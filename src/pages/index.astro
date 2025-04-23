@@ -1,22 +1,17 @@
 ---
-//Layout
 import Layout from "../layouts/Layout.astro";
+import ContactmeComponent from "../components/Contactme/ContactmeComponent.astro";
+import BtnContactame from "../components/Buttons/BtnContactame.astro";
+import BtnGmail from "../components/Buttons/BtnGmail.astro";
+import BtnLinkedin from "../components/Buttons/BtnLinkedin.astro";
 
-//Componentes
-import Contactme from "../components/Contactme.astro";
-import BtnContactame from "../components/BtnContactame.astro";
-import BtnGmail from "../components/BtnGmail.astro";
-import BtnLinkedin from "../components/BtnLinkedin.astro";
+// Aquí importamos el componente React como un componente de Astro
 
-//CSS
+import MainProject from "../components/Projects/MainProject";
 import "../styles/global.css";
 import "../styles/components.css";
 import "../styles/index.css";
-
-//Boostrap
 import "bootstrap/dist/css/bootstrap.min.css";
-
-//Img import
 import miImg from "../assets/images/miImg.png";
 ---
 
@@ -58,9 +53,10 @@ import miImg from "../assets/images/miImg.png";
         </div>
     </section>
 
-    <section class="section s2">
+    <section class="section s2" style="overflow-y: auto;">
         <div class="container">
-            <h2 class="tittle">Mis Proyectos</h2>
+            <h2 class="tittle" style="color: white;">Mis Proyectos</h2>
+            <MainProject client:only />
         </div>
     </section>
 
@@ -81,9 +77,9 @@ import miImg from "../assets/images/miImg.png";
                             No trabajes solo, trabaja conmigo
                         </h4>
                     </div>
-                    <div class="col colu2-s3">
-                        <BtnGmail />
-                        <BtnLinkedin />
+                    <div class="col colu2-s3" style="color: white;">
+                        <BtnContactame/>
+                        <BtnLinkedin/>
                     </div>
                 </div>
             </div>
@@ -103,10 +99,7 @@ import miImg from "../assets/images/miImg.png";
     <section class="section s5">
         <div class="container">
             <div class="row">
-                <h2 class="tittle" style="text-align: center; color:white;">
-                    Contactame
-                </h2>
-                <Contactme />
+                <ContactmeComponent />
             </div>
         </div>
     </section>

@@ -1,6 +1,6 @@
 ---
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
+import HeaderComponent from "../components/GlobalComponents/HeaderComponent.astro";
+import FooterComponent from "../components/GlobalComponents/FooterComponent.astro";
 import "../styles/Fonts.css";
 ---
 
@@ -14,7 +14,7 @@ import "../styles/Fonts.css";
         <title>Manuel Zepeda WebSite</title>
     </head>
     <header>
-        <Header />
+        <HeaderComponent />
     </header>
 
     <body>
@@ -25,7 +25,7 @@ import "../styles/Fonts.css";
     </body>
 
     <footer>
-        <Footer />
+        <FooterComponent />
     </footer>
 
 

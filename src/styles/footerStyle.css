@@ -43,6 +43,8 @@
 
 .social-link:hover {
     color: #517bdd;
+    transition: all 0.3s ease-in-out;
+
 }
 
 .copyright {
