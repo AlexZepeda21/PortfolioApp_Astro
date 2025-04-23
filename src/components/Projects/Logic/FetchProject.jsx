@@ -31,18 +31,18 @@ export default function FetchProject({ id_categoria, title }) {
         href="https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css"
       />
 
-      <h2>Proyectos de la categoría: {title}</h2>
+      <h2 className="categoria">Proyectos de la categoría: {title}</h2>
       <ul className="containerProjects">
         {projects.map(project => (
           project && (
             <article className="card">
-              <h4>{project.type_project}</h4>
-              <h3>{project.title_project}</h3>
-              <p>{project.development_start_date}/{project.development_end_date}</p>
-              <p>{project.image_base64}</p>
-              <p>{project.image_mime}</p>
-              <p>{project.description}</p>
-              <p>{project.last_edition}</p>
+              <h4 className="type">{project.type_project}</h4>
+              <h3 className="title">{project.title_project}</h3>
+              <p className="start_date">{project.development_start_date}/{project.development_end_date}</p>
+              <p className="end_date">{project.image_base64}</p>
+              <p className="image64">{project.image_mime}</p>
+              <p className="description">{project.description}</p>
+              <p className="lastedition">{project.last_edition}</p>
               <div className="container">
                 <div className="row">
                   <div className="col linkProject">

@@ -17,7 +17,6 @@
     transition: all 0.3s ease-in-out;
     width: 175px; /* Ancho máximo fijo para mantener alineación */
     white-space: nowrap; /* Evita que el texto se divida en varias líneas */
-    overflow: hidden; /* Oculta el texto que se desborda */
     text-overflow: ellipsis; /* Añade '...' si el texto es demasiado largo */
 }
 
