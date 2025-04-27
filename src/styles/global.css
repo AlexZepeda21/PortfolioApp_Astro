@@ -10,7 +10,7 @@ html, body {
   background-position: center;
 }
 
-#starsCanvas {
+/* #starsCanvas {
   position: fixed;
   top: 0;
   left: 0;
@@ -18,9 +18,10 @@ html, body {
   height: 100%;
   pointer-events: none;
   max-height: 100vh;
-}
+} */
 
 html{
   background: url('../assets/images/star-pattern.png') repeat, #0a0f1c;
  overflow-x: hidden;
 }
+

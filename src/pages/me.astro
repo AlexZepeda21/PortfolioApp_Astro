@@ -1,0 +1,52 @@
+---
+// archivo: src/components/MePoster.astro
+import esa from "../assets/images/esa.png";
+import cvFoto from "../assets/images/cvFoto.JPG";
+import "../styles/me/me.css";
+---
+
+<div class="poster">
+  <div class="imgLogo">
+    <img src={esa.src} alt="Logo ESA" class="img_esa" />
+  </div>
+
+  <div class="hederPortfolio">
+    <div class="welcomeText">
+      <h1 style="color: black; font-family: 'Fuente3'; font-weight: bold;">
+        WELCOME
+      </h1>
+    </div>
+  </div>
+
+  <div class="infoSection">
+    <div class="left">
+      <p class="contact">Phone N. +503 7755-9566</p>
+      <h3>MANUEL ZEPEDA</h3>
+      <p class="status">I AM ACTUALLY:<br />AVAILABLE TO WORK</p>
+    </div>
+    <div class="right">
+      <img src={cvFoto.src} alt="Foto CV" class="img_mine" />
+    </div>
+  </div>
+
+  <div class="details">
+    <div class="description">
+      <h3>FRAMEWORKS</h3>
+      <p><b>EXPERIENCIA</b>: React, Astro, Laravel, Spring</p>
+      <p><b>APRENDIENDO</b>: ASP.NET, NodeJS, NextJS</p>
+      <br />
+      <h3>LENGUAGES</h3>
+      <p><b>EXPERIENCIA</b>: PHP, Java, C#, JavaScript</p>
+      <p><b>APRENDIENDO</b>: Python, TypeScript</p>
+    </div>
+  </div>
+
+  <div class="knownme">
+    <h3>KNOW ME</h3>
+    <p>
+      Soy un apasionado por el desarrollo de software y busco siempre un
+      aprendizaje constante. Me gusta proponerme metas y desafiarme a mí mismo.
+      Creo que es parte de la vida y que todos deberíamos hacerlo para mejorar.
+    </p>
+  </div>
+</div>

@@ -1,0 +1,7 @@
+.categorylist {
+    overflow-x: auto;
+}
+
+.projectlist{
+    overflow-y: auto;
+}

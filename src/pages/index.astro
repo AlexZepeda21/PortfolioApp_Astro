@@ -4,20 +4,21 @@ import ContactmeComponent from "../components/Contactme/ContactmeComponent.astro
 import BtnContactame from "../components/Buttons/BtnContactame.astro";
 import BtnGmail from "../components/Buttons/BtnGmail.astro";
 import BtnLinkedin from "../components/Buttons/BtnLinkedin.astro";
+import Me from "./me.astro";
 
 // Aquí importamos el componente React como un componente de Astro
 
 import MainProject from "../components/Projects/MainProject";
 import "../styles/global.css";
-import "../styles/components.css";
 import "../styles/index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import miImg from "../assets/images/miImg.png";
 ---
 
 <Layout>
-    <section class="section s1">
-        <div class="container">
+    <main class="container" style="width: 100%;">
+
+        <section id="presentation" class="section s1">
             <div class="row">
                 <div class="col column1">
                     <img src={miImg.src} class="img" />
@@ -30,7 +31,6 @@ import miImg from "../assets/images/miImg.png";
                         </a>
                     </div>
                 </div>
-
                 <div class="col column2">
                     <h1 class="capital-tittle" style="font-size : 4rem;">
                         Manuel Zepeda
@@ -43,25 +43,21 @@ import miImg from "../assets/images/miImg.png";
                     </h3>
                 </div>
             </div>
-        </div>
-        <br />
-        <div class="container" style="opacity : 75%;">
-            <p>
-                Bienvenido a mi Portfolio, continua bajando para ver mis
-                proyectos, <br /> si las estrellas te resultan molestas puedes quitarlas
-            </p>
-        </div>
-    </section>
+            <div style="opacity : 75%;">
+                <p>
+                    Bienvenido a mi Portfolio, continua bajando para ver mis
+                    proyectos, <br /> si las estrellas te resultan molestas puedes
+                    quitarlas
+                </p>
+            </div>
+        </section>
 
-    <section class="section s2" style="overflow-y: auto;">
-        <div class="container">
+        <section id="projets" class="section s2">
             <h2 class="tittle" style="color: white;">Mis Proyectos</h2>
             <MainProject client:only />
-        </div>
-    </section>
+        </section>
 
-    <section class="section s3">
-        <div class="container margins3">
+        <section class="section s3">
             <div class="together">
                 <div class="row">
                     <div class="col colu1-s3">
@@ -78,29 +74,32 @@ import miImg from "../assets/images/miImg.png";
                         </h4>
                     </div>
                     <div class="col colu2-s3" style="color: white;">
-                        <BtnContactame/>
-                        <BtnLinkedin/>
+                        <BtnGmail />
+                        <BtnLinkedin />
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="section s4">
-        <div class="container">
+        <section id="experience" class="section s4">
             <h2 class="tittle">Mi experiencia</h2>
             <div class="container margin-prub">
                 <h1>HOLA BIENVENIDO</h1>
                 <h1>Hola bienvenido</h1>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="section s5">
-        <div class="container">
-            <div class="row">
+        <section id="contactme" class="section s5">
+            <div>
                 <ContactmeComponent />
             </div>
-        </div>
-    </section>
+        </section>
+
+        <section class="section s6">
+            <div class="container">
+                <Me />
+            </div>
+        </section>
+        
+    </main>
 </Layout>
