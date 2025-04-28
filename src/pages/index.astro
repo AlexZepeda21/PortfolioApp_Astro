@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import ContactmeComponent from "../components/Contactme/ContactmeComponent.astro";
-import BtnContactame from "../components/Buttons/BtnContactame.astro";
 import BtnGmail from "../components/Buttons/BtnGmail.astro";
 import BtnLinkedin from "../components/Buttons/BtnLinkedin.astro";
 import Me from "./me.astro";
@@ -16,9 +15,10 @@ import miImg from "../assets/images/miImg.png";
 ---
 
 <Layout>
-    <main class="container" style="width: 100%;">
-
-        <section id="presentation" class="section s1">
+    <main
+        class="s1 container-main d-flex justify-content-center align-items-center min-vh-100"
+    >
+        <section id="presentation" class="s1">
             <div class="row">
                 <div class="col column1">
                     <img src={miImg.src} class="img" />
@@ -52,12 +52,12 @@ import miImg from "../assets/images/miImg.png";
             </div>
         </section>
 
-        <section id="projets" class="section s2">
+        <section id="projets" class="s2">
             <h2 class="tittle" style="color: white;">Mis Proyectos</h2>
             <MainProject client:only />
         </section>
 
-        <section class="section s3">
+        <section class="s3">
             <div class="together">
                 <div class="row">
                     <div class="col colu1-s3">
@@ -81,25 +81,24 @@ import miImg from "../assets/images/miImg.png";
             </div>
         </section>
 
-        <section id="experience" class="section s4">
+        <section id="experience" class="s4">
             <h2 class="tittle">Mi experiencia</h2>
-            <div class="container margin-prub">
+            <div>
                 <h1>HOLA BIENVENIDO</h1>
                 <h1>Hola bienvenido</h1>
             </div>
         </section>
 
-        <section id="contactme" class="section s5">
+        <section id="contactme" class="s5">
             <div>
                 <ContactmeComponent />
             </div>
         </section>
 
-        <section class="section s6">
-            <div class="container">
+        <section class="s6">
+            <div>
                 <Me />
             </div>
         </section>
-        
     </main>
 </Layout>
