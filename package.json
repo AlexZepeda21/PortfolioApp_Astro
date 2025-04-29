@@ -17,6 +17,8 @@
     "axios": "^1.8.4",
     "boostrap": "^2.0.0",
     "bootstrap": "^5.3.5",
+    "framer-motion": "^12.9.2",
+    "lucide-react": "^0.503.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "tailwindcss": "^4.1.3"
