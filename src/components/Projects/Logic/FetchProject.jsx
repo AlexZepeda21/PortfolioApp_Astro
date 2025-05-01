@@ -51,8 +51,12 @@ export default function FetchProject({ id_categoria, title }) {
               >
                 <div className="project-image-container">
                   <img
-                    src={project.image_base64 || "/placeholder.svg"}
-                    alt={project.title_project}
+                    src={
+                      project.image_base64
+                        ? `data:${project.image_mime};base64,${project.image_base64}`
+                        : "/placeholder.svg"
+                    }
+                    alt={project.title}
                     className="project-image"
                     style={{
                       transform: hoveredProject === project.id_project ? "scale(1.05)" : "scale(1)",
