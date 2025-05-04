@@ -1,0 +1,39 @@
+---
+import "../styles/presentation/presentation.css";
+import miImg from "../assets/images/miImg.png";
+import BtnDisponible from "../components/Buttons/BtnDisponible.astro";
+---
+
+    <div>
+        <div class="row">
+            <div class="col column1">
+                <img src={miImg.src} class="img" />
+                <div>
+                    <a
+                        href="https://www.linkedin.com/in/manuel-zepeda-79383a33a/"
+                        style="text-decoration: none; color:white; opacity:75%;"
+                    >
+                        <BtnDisponible />
+                    </a>
+                </div>
+            </div>
+            <div class="col column2">
+                <h1 class="capital-tittle" style="font-size : 4rem;">
+                    Manuel Zepeda
+                </h1>
+                <h3 class="tittle">
+                    Desarrollador <code
+                        class="tittle"
+                        style="color: rgba(245, 249, 247, 0.536);"
+                        >Full Stack</code
+                    >
+                </h3>
+            </div>
+        </div>
+        <div style="opacity : 80%;">
+            <p>
+                Bienvenido a mi Portfolio, continua bajando para ver mis
+                proyectos, <br /> si las estrellas te resultan molestas puedes quitarlas
+            </p>
+        </div>
+    </div>

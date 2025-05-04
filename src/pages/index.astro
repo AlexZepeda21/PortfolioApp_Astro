@@ -1,104 +1,62 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import ContactmeComponent from "../components/Contactme/ContactmeComponent.astro";
-import BtnGmail from "../components/Buttons/BtnGmail.astro";
-import BtnLinkedin from "../components/Buttons/BtnLinkedin.astro";
 import Me from "./me.astro";
 
 // Aquí importamos el componente React como un componente de Astro
 
-import MainProject from "../components/Projects/MainProject";
 import "../styles/global.css";
 import "../styles/index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import miImg from "../assets/images/miImg.png";
+
+import MainProject from "../components/Projects/MainProject";
+import Presentation from "./presentation.astro";
+import WorkTogether from "./WorkTogether.astro";
+import Experience from "./experience.astro";
 ---
 
 <Layout>
-    <main
-        class="Sections container-main d-flex justify-content-center align-items-center min-vh-100"
-    >
-        <section id="presentation" class="s1">
-            <div class="row">
-                <div class="col column1">
-                    <img src={miImg.src} class="img" />
-                    <div class="disponible">
-                        <a
-                            href="https://www.linkedin.com/in/manuel-zepeda-79383a33a/"
-                            style="text-decoration: none; color:white; opacity:75%;"
-                        >
-                            Disponible para trabajar
-                        </a>
-                    </div>
-                </div>
-                <div class="col column2">
-                    <h1 class="capital-tittle" style="font-size : 4rem;">
-                        Manuel Zepeda
-                    </h1>
-                    <h3 class="tittle">
-                        Desarrollador <code
-                            class="tittle"
-                            style="color: aquamarine;">Full Stack</code
-                        >
-                    </h3>
-                </div>
-            </div>
-            <div style="opacity : 75%;">
-                <p>
-                    Bienvenido a mi Portfolio, continua bajando para ver mis
-                    proyectos, <br /> si las estrellas te resultan molestas puedes
-                    quitarlas
-                </p>
-            </div>
+    <main class="Sections">
+        <section
+            id="presentation"
+            class="s1 container-main justify-content-center align-items-center min-vh-100"
+        >
+            <Presentation />
         </section>
 
-        <section id="projets" class="s2">
-            <h2 class="tittle" style="color: white;">Mis Proyectos</h2>
+        <section
+            id="projets"
+            class="s2 container-main d-flex justify-content-center align-items-center min-vh-100"
+        >
             <MainProject client:only />
         </section>
 
-        <section class="s3">
-            <div class="together">
-                <div class="row">
-                    <div class="col colu1-s3">
-                        <h2
-                            style="font-family: 'Fuente4';font-size: 2rem; color:white;"
-                        >
-                            ¿Tienes algun proyecto?
-                        </h2>
-                        <h4
-                            class="tittle"
-                            style="font-size: 1rem; color:white;"
-                        >
-                            No trabajes solo, trabaja conmigo
-                        </h4>
-                    </div>
-                    <div class="col colu2-s3" style="color: white;">
-                        <BtnGmail />
-                        <BtnLinkedin />
-                    </div>
-                </div>
-            </div>
+        <section
+            id="together"
+            class="s3 container-main d-flex justify-content-center align-items-center min-vh-100"
+        >
+            <WorkTogether />
         </section>
 
-        <section id="experience" class="s4">
-            <h2 class="tittle">Mi experiencia</h2>
-            <div>
-                <h1>HOLA BIENVENIDO</h1>
-                <h1>Hola bienvenido</h1>
-            </div>
+        <section
+            id="experience"
+            class="s4 container-main d-flex justify-content-center align-items-center min-vh-100"
+        >
+            <Experience />
         </section>
 
-        <section id="contactme" class="s5">
-            <div>
-                <ContactmeComponent />
-            </div>
+        <section
+            id="contactme"
+            class="s5 container-main d-flex justify-content-center align-items-center min-vh-100"
+        >
+            <ContactmeComponent />
         </section>
 
-        <section class="s6">
-            <div>
-                <Me />
-            </div>
+        <section
+            id="me"
+            class="s6 container-main d-flex justify-content-center align-items-center min-vh-100"
+        >
+            <Me />
         </section>
     </main>
 </Layout>

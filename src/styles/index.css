@@ -1,11 +1,23 @@
 /* General secciones */
+:root {
+  --color-background: #0a0a0f;
+  --color-card: #121218;
+  --color-border: #1e1e2a;
+  --color-text: #ffffff;
+  --color-text-secondary: #a0a0b0;
+  --color-purple: #a78bfa;
+  --color-pink: #4f6bda;
+  --border-radius: 12px;
+  --transition-standard: all 0.3s ease;
+}
+
 .Sections {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   padding: 2rem 1rem;
-
 }
 
 .s1,
@@ -31,140 +43,46 @@
 }
 
 /* ---------------------------------------------------------------- */
-.s1{
+.s1 {
   color: white;
   text-align: center;
 }
-.s2{
+
+.s2 {
   color: white;
   text-align: center;
 }
-.s3{
+
+.s3 {
   color: white;
   text-align: center;
 }
-.s4{
+
+.s4 {
   color: white;
   text-align: center;
 }
-.s5{
+
+.s5 {
   color: white;
   text-align: center;
 }
-.s6{
+
+.s6 {
   color: white;
   text-align: center;
 }
+
 /* Section1 ------------------------------------------------------  */
 
-.column1,
-.column2 {
-  flex: 1 1 300px;
-  max-width: 500px;
-  padding: 1rem;
-  box-sizing: border-box;
-}
-
-.column1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin: 10px;
-  border: 3px solid aquamarine;
-  box-shadow: 0 0 20px rgba(127, 255, 212, 0.3);
-  transition: transform 0.3s ease;
-}
-
-.img:hover {
-  transform: scale(1.05);
-}
-
-.disponible {
-  display: flex;
-  justify-content: center;
-  border: 2px solid rgba(127, 255, 212, 0.3);
-  border-radius: 25px;
-  background-color: rgba(1, 2, 2, 0.2);
-  padding: 10px 20px;
-  margin-top: 20px;
-  font-family: "Fuente3", sans-serif;
-  font-size: 1rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease-in-out;
-  backdrop-filter: blur(5px);
-}
-
-.disponible:hover {
-  transform: scale(1.05);
-  background-color: rgba(127, 255, 212, 0.1);
-  border-color: aquamarine;
-}
-
-.capital-tittle {
-  font-size: 4rem;
-  margin-bottom: 0.5rem;
-  background: linear-gradient(to right, #ffffff, aquamarine);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-}
-
-.tittle {
-  margin: 0.5rem 0;
-  font-weight: 600;
-}
 
 /* Section2 ------------------------------------------------------  */
 
-.tittle {
-  margin-bottom: 3rem;
-  font-size: 2.5rem;
-  position: relative;
-}
+
+
 /* Section3 ------------------------------------------------------  */
-.together {
-  border: 2px solid rgba(127, 255, 212, 0.2);
-  border-radius: 15px;
-  padding: 3rem 2rem;
-  margin: auto;
-  max-width: 800px;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
 
-.together:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
-}
 
-.colu1-s3 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 2rem;
-}
-
-.colu2-s3 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
 
 /* Section4 ------------------------------------------------------  */
 

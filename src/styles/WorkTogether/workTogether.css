@@ -1,0 +1,54 @@
+:root {
+  --color-background: #0a0a0f;
+  --color-card: #121218;
+  --color-border: #1e1e2a;
+  --color-text: #ffffff;
+  --color-text-secondary: #a0a0b0;
+  --color-purple: #a78bfa;
+  --color-pink: #4f6bda;
+  --border-radius: 12px;
+  --transition-standard: all 0.3s ease;
+}
+
+.together {
+    border: 2px solid rgba(127, 255, 212, 0.2);
+    border-radius: 15px;
+    padding: 3rem 2rem;
+    margin: auto;
+    max-width: 800px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .together:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+  }
+
+
+
+  /* 
+  
+   <div class="together">
+            <div class="row">
+                <div class="col colu1-s3">
+                    <h2 style="font-family: 'Fuente4';font-size: 2rem; color:white;">
+                        ¿Tienes algun proyecto?
+                    </h2>
+                    <h4
+                        class="tittle"
+                        style="font-size: 1rem; color:white;"
+                    >
+                        No trabajes solo, trabaja conmigo
+                    </h4>
+                </div>
+                <div class="col colu2-s3" style="color: white;">
+                    <BtnGmail />
+                    <BtnLinkedin />
+                </div>
+            </div>
+        </div>
+  */

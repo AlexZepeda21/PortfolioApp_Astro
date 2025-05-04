@@ -1,4 +1,23 @@
-/* From Uiverse.io by MuhammadHasann */
+/* General secciones */
+:root {
+  --color-background: #0a0a0f;
+  --color-card: #121218;
+  --color-border: #1e1e2a;
+  --color-text: #ffffff;
+  --color-text-secondary: #a0a0b0;
+  --color-purple: #a78bfa;
+  --color-pink: #4f6bda;
+  --border-radius: 12px;
+  --transition-standard: all 0.3s ease;
+}
+
+/* 
+background: linear-gradient(to right, var(--color-purple), var(--color-pink));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; 
+*/
+
 .buttonSpecial {
   /* Texto del botón */
   font-family: 'Fuente4';
