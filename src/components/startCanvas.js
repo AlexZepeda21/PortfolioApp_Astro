@@ -1,4 +1,4 @@
-/* const canvas = document.getElementById("starsCanvas");
+const canvas = document.getElementById("starsCanvas");
 const ctx = canvas.getContext("2d");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
@@ -90,4 +90,4 @@ function animate() {
     requestAnimationFrame(animate); // Continuar la animación
 }
 
-animate();  */
+animate(); 

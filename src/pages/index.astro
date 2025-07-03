@@ -1,62 +1,45 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import ContactmeComponent from "../components/Contactme/ContactmeComponent.astro";
 import Me from "./me.astro";
 
 // Aquí importamos el componente React como un componente de Astro
-
 import "../styles/global.css";
 import "../styles/index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+import ContactmeComponent from "../components/Contactme/ContactmeComponent.astro";
 import MainProject from "../components/Projects/MainProject";
 import Presentation from "./presentation.astro";
 import WorkTogether from "./WorkTogether.astro";
-import Experience from "./experience.astro";
+import Technologies from "../components/Technologies/Technologies";
+/* import Experience from "./experience.astro";
+ */
 ---
 
 <Layout>
-    <main class="Sections">
-        <section
-            id="presentation"
-            class="s1 container-main justify-content-center align-items-center min-vh-100"
-        >
+    <main class="">
+        <div class="py-5">
             <Presentation />
-        </section>
+        </div>
 
-        <section
-            id="projets"
-            class="s2 container-main d-flex justify-content-center align-items-center min-vh-100"
-        >
+        <div class="py-5">
             <MainProject client:only />
-        </section>
+        </div>
 
-        <section
-            id="together"
-            class="s3 container-main d-flex justify-content-center align-items-center min-vh-100"
-        >
-            <WorkTogether />
-        </section>
+        <div class="py-5">
+            <WorkTogether/>
+        </div>
 
-        <section
-            id="experience"
-            class="s4 container-main d-flex justify-content-center align-items-center min-vh-100"
-        >
-            <Experience />
-        </section>
+        <div class="py-5">
+            <Technologies client:only/>
+        </div>
 
-        <section
-            id="contactme"
-            class="s5 container-main d-flex justify-content-center align-items-center min-vh-100"
-        >
+        <div class="py-5">
             <ContactmeComponent />
-        </section>
+        </div>
 
-        <section
-            id="me"
-            class="s6 container-main d-flex justify-content-center align-items-center min-vh-100"
-        >
+        <div class="py-5">
             <Me />
-        </section>
+        </div>
     </main>
 </Layout>

@@ -11,6 +11,16 @@
   --transition-standard: all 0.3s ease;
 }
 
+
+.errorServer {
+  text-align: center;
+}
+
+.noneProject {
+text-align: center;
+}
+
+
 /* Container and layout */
 .projects-container {
   min-height: 100vh;
@@ -19,7 +29,7 @@
 }
 
 .projects-wrapper {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -39,14 +49,9 @@
 }
 
 .projects-subtitle {
-  color: var(--color-text-secondary);
   max-width: 600px;
   margin: 0 auto;
   font-size: 1.1rem;
-  background: linear-gradient(to right, var(--color-purple), var(--color-pink));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
 }
 
 /* Project grid */

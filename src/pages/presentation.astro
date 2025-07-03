@@ -1,39 +1,373 @@
 ---
-import "../styles/presentation/presentation.css";
 import miImg from "../assets/images/miImg.png";
 import BtnDisponible from "../components/Buttons/BtnDisponible.astro";
 ---
 
-    <div>
-        <div class="row">
-            <div class="col column1">
-                <img src={miImg.src} class="img" />
-                <div>
-                    <a
-                        href="https://www.linkedin.com/in/manuel-zepeda-79383a33a/"
-                        style="text-decoration: none; color:white; opacity:75%;"
-                    >
-                        <BtnDisponible />
-                    </a>
-                </div>
-            </div>
-            <div class="col column2">
-                <h1 class="capital-tittle" style="font-size : 4rem;">
-                    Manuel Zepeda
-                </h1>
-                <h3 class="tittle">
-                    Desarrollador <code
-                        class="tittle"
-                        style="color: rgba(245, 249, 247, 0.536);"
-                        >Full Stack</code
-                    >
-                </h3>
-            </div>
-        </div>
-        <div style="opacity : 80%;">
-            <p>
-                Bienvenido a mi Portfolio, continua bajando para ver mis
-                proyectos, <br /> si las estrellas te resultan molestas puedes quitarlas
-            </p>
-        </div>
+<div class="presentation-container">
+  <div class="presentation-header">
+    <div class="profile-section">
+      <div class="profile-image-container">
+        <img
+          src={miImg.src || "/placeholder.svg"}
+          class="profile-image"
+          alt="Manuel Zepeda"
+        />
+      </div>
+      <a
+        href="https://www.linkedin.com/in/manuel-zepeda-79383a33a/"
+        aria-label="Perfil de LinkedIn"
+        class="styleButton"
+      >
+        <BtnDisponible />
+      </a>
     </div>
+
+    <div class="info-section">
+      <h1 class="name-title">Manuel Zepeda</h1>
+      <div class="info-items">
+        <h3 class="info-item">
+          <code class="info-code">Desarrollador Full Stack</code>
+        </h3>
+        <h3 class="info-item">
+          <code class="info-code">+503 7755-9566</code>
+        </h3>
+        <h3 class="info-item">
+          <code class="info-code">{"</>"}</code>
+        </h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="description-container">
+    <p class="description-text">
+      Técnico en ingeniería en desarrollo de software con bases robustas en
+      frontend y backend con experiencia en múltiples frameworks y buenas
+      prácticas de programación para llevar tus aplicaciones al siguiente nivel.
+    </p>
+  </div>
+
+  <!--  <div class="skills-container">
+    <div class="skill-tag">JavaScript</div>
+    <div class="skill-tag">HTML/CSS</div>
+    <div class="skill-tag">React</div>
+    <div class="skill-tag">Node.js</div>
+    <div class="skill-tag">Astro</div>
+  </div>
+</div> -->
+
+  <style>
+    /* Container styles */
+    :root {
+      --color-card: #121218;
+      --color-border: #1e1e2a;
+      --color-text: #ffffff;
+      --color-text-secondary: #a0a0b0;
+      --color-purple: #a78bfa;
+      --color-pink: #4f6bda;
+      --border-radius: 12px;
+      --transition-standard: all 0.3s ease;
+    }
+
+    /*   .projects-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      background: linear-gradient(
+        to right,
+        var(--color-purple),
+        var(--color-pink)
+      );
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    } */
+    .styleButton {
+      color: white;
+      opacity: 80%;
+    }
+    .presentation-container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2.5rem;
+      background: rgba(21, 48, 169, 0.03);
+      border-radius: 16px;
+      box-shadow: 0 8px 32px rgba(15, 23, 42, 0.1);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(79, 107, 218, 0.1);
+    }
+
+    /* Header section with profile and info */
+    .presentation-header {
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+      align-items: center;
+      margin-bottom: 3.5rem;
+    }
+
+    @media (min-width: 768px) {
+      .presentation-header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+
+    /* Profile section */
+    .profile-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    .profile-image-container {
+      position: relative;
+      display: inline-block;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .profile-image-container::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        135deg,
+        rgba(79, 107, 218, 0.2),
+        rgba(21, 48, 169, 0.2)
+      );
+      z-index: 1;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .profile-image-container:hover::before {
+      opacity: 1;
+    }
+
+    .profile-image-container::after {
+      content: "";
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      right: -10px;
+      bottom: -10px;
+      background: linear-gradient(135deg, #4f6bda 0%, #1530a9 100%);
+      z-index: -1;
+      filter: blur(15px);
+      opacity: 0.6;
+      border-radius: 12px;
+      transition: all 0.5s ease;
+    }
+
+    .profile-image-container:hover::after {
+      opacity: 0.8;
+      filter: blur(20px);
+    }
+
+    .profile-image {
+      width: 220px;
+      height: auto;
+      border-radius: 12px;
+      border: 3px solid rgba(79, 107, 218, 0.4);
+      object-fit: cover;
+      transition:
+        transform 0.5s ease,
+        filter 0.3s ease;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+      filter: contrast(1.05) brightness(1.05);
+    }
+
+    .profile-image:hover {
+      transform: translateY(-7px) scale(1.02);
+    }
+
+    /* .availability-link {
+    text-decoration: none;
+    color: white;
+    opacity: 0.9;
+    transition: all 0.3s ease;
+    transform: translateY(0);
+    display: block;
+  }
+
+  .availability-link:hover {
+    opacity: 1;
+    transform: translateY(-3px);
+  } */
+
+    /* Info section */
+    .info-section {
+      text-align: center;
+      position: relative;
+    }
+
+    @media (min-width: 768px) {
+      .info-section {
+        text-align: left;
+        flex: 1;
+        padding-left: 3rem;
+      }
+
+      .info-section::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 10%;
+        height: 80%;
+        width: 3px;
+        background: linear-gradient(to bottom, #4f6bda, transparent);
+        border-radius: 3px;
+      }
+    }
+
+    .name-title {
+      font-size: 4rem;
+      margin-bottom: 1.8rem;
+      background: linear-gradient(
+        to right,
+        var(--color-purple),
+        var(--color-pink)
+      );
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      position: relative;
+      display: inline-block;
+    }
+
+    .name-title::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 60px;
+      height: 4px;
+      background: linear-gradient(to right, #4f6bda, #1530a9);
+      border-radius: 2px;
+    }
+
+    @media (min-width: 768px) {
+      .name-title::after {
+        width: 100px;
+      }
+    }
+
+    .info-items {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .info-item {
+      margin: 0;
+      position: relative;
+      transition: transform 0.3s ease;
+    }
+
+    .info-item:hover {
+      transform: translateX(5px);
+    }
+
+    .info-code {
+      font-weight: 600;
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      -webkit-text-fill-color: transparent;
+      font-size: 1.35rem;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      background: linear-gradient(
+        to right,
+        var(--color-purple),
+        var(--color-pink)
+      );
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      display: inline-block;
+    }
+
+    /* Description section */
+    .description-container {
+      margin: 2.5rem 0;
+      padding: 2rem;
+      border-radius: 12px;
+      background-color: rgba(21, 48, 169, 0.08);
+      border: 1px solid rgba(79, 107, 218, 0.2);
+      backdrop-filter: blur(8px);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .description-container::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(to right, #4f6bda, #1530a9);
+    }
+
+    .description-text {
+      text-align: center;
+      color: white;
+      line-height: 1.8;
+      font-size: 1.15rem;
+      font-weight: 400;
+      letter-spacing: 0.01em;
+    }
+
+    /* Skills section */
+    /*  .skills-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      margin-top: 2.5rem;
+    } */
+
+    /*  .skill-tag {
+    padding: 0.6rem 1.2rem;
+    background-color: rgba(79, 107, 218, 0.12);
+    border: 1px solid rgba(79, 107, 218, 0.3);
+    border-radius: 8px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .skill-tag::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(79, 107, 218, 0.2), rgba(21, 48, 169, 0.2));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .skill-tag:hover {
+    background-color: rgba(79, 107, 218, 0.25);
+    transform: translateY(-4px);
+    box-shadow: 0 6px 15px rgba(21, 48, 169, 0.2);
+  }
+
+  .skill-tag:hover::before {
+    opacity: 1;
+  } */
+  </style>
+</div>

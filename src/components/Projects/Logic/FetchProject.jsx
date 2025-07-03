@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import { apiRoute, projectsByCategory } from "../../../lib/api";
+import { projectsByCategory } from "../../../lib/api";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Github, ExternalLink, Code2 } from "lucide-react"
 import { motion } from "framer-motion"
@@ -23,9 +23,26 @@ export default function FetchProject({ id_categoria, title }) {
       });
   }, [id_categoria]);
 
-  if (error) return <h1>{error}: Ha ocurrido un problema</h1>;
-  if (projects.length === 0) return <h1>No hay proyectos para esta categoría</h1>;
+  const AlertError = () => {
+    return (
+      <div className="errorServer">
+        <h1>Error: Ha ocurrido un problema</h1>
+      </div>
+    );
+  }
+  
+  const AlertProjectNone = () => {
+    return (
+      <div className="noneProject">
+        <h1>No hay proyectos para esta categoría aun</h1>
+      </div>
+    );
+  }
+  
 
+  if (error) return <AlertError />;
+  if (projects.length === 0) return <AlertProjectNone />;
+  
   return (
     <div className="projects-container">
       <div className="projects-wrapper">

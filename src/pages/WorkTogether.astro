@@ -1,18 +1,239 @@
 ---
 import BtnGmail from "../components/Buttons/BtnGmail.astro";
 import BtnLinkedin from "../components/Buttons/BtnLinkedin.astro";
-import "../styles/WorkTogether/workTogether.css";
 ---
 
-<div class="together">
-    <div class="row">
-        <div class="col colu1-s3">
-            <h2>¿Tienes algun proyecto?</h2>
-            <h4 class="tittle">No trabajes solo, trabaja conmigo</h4>
-        </div>
-        <div class="col colu2-s3">
-            <BtnGmail />
-            <BtnLinkedin />
-        </div>
+<div class="together-container">
+  <div class="together">
+    <div class="together-background">
+      <div class="glow-1"></div>
+      <div class="glow-2"></div>
     </div>
+    
+    <div class="together-content">
+      <div class="together-text">
+        <h2 class="together-title">¿Tienes algún proyecto en mente?</h2>
+        <p class="together-subtitle">No trabajes solo, <span class="highlight">trabaja conmigo</span></p>
+      </div>
+      
+      <div class="together-actions">
+        <BtnGmail />
+        <BtnLinkedin />
+      </div>
+    </div>
+    
+    <div class="together-decoration">
+      <div class="code-line">
+        <span class="code-number">1</span>
+        <span class="code-text">const <span class="code-variable">collaboration</span> = <span class="code-value">true</span>;</span>
+      </div>
+      <div class="code-line">
+        <span class="code-number">2</span>
+        <span class="code-text">if (<span class="code-variable">collaboration</span>) {</span>
+      </div>
+      <div class="code-line">
+        <span class="code-number">3</span>
+        <span class="code-text">&nbsp;&nbsp;<span class="code-function">createAmazingProject</span>();</span>
+      </div>
+      <div class="code-line">
+        <span class="code-number">4</span>
+        <span class="code-text">{'}'}</span>
+      </div>
+    </div>
+  </div>
 </div>
+
+<style>
+  :root {
+    --color-background: #0a0a0f;
+    --color-card: #121218;
+    --color-border: #1e1e2a;
+    --color-text: #ffffff;
+    --color-text-secondary: #a0a0b0;
+    --color-purple: #a78bfa;
+    --color-pink: #4f6bda;
+    --border-radius: 12px;
+    --transition-standard: all 0.3s ease;
+  }
+
+  .together-container {
+    padding: 2rem 1rem;
+    max-width: 1000px;
+    margin: 4rem auto;
+  }
+
+  .together {
+    position: relative;
+    border-radius: 16px;
+    padding: 3.5rem 2.5rem;
+    background-color: rgba(18, 18, 24, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    overflow: hidden;
+    border: 1px solid rgba(79, 107, 218, 0.3);
+    box-shadow: 
+      0 20px 40px rgba(0, 0, 0, 0.3),
+      0 0 80px rgba(79, 107, 218, 0.15) inset;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    z-index: 1;
+  }
+
+  .together:hover {
+    transform: translateY(-8px);
+    box-shadow: 
+      0 25px 50px rgba(0, 0, 0, 0.4),
+      0 0 100px rgba(79, 107, 218, 0.2) inset;
+  }
+
+  .together-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    overflow: hidden;
+  }
+
+  .glow-1, .glow-2 {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(60px);
+    opacity: 0.4;
+    transition: all 0.8s ease;
+  }
+
+  .glow-1 {
+    top: -100px;
+    left: -100px;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, var(--color-pink) 0%, rgba(79, 107, 218, 0) 70%);
+  }
+
+  .glow-2 {
+    bottom: -100px;
+    right: -100px;
+    width: 250px;
+    height: 250px;
+    background: radial-gradient(circle, var(--color-purple) 0%, rgba(167, 139, 250, 0) 70%);
+  }
+
+  .together:hover .glow-1 {
+    transform: scale(1.2);
+    opacity: 0.5;
+  }
+
+  .together:hover .glow-2 {
+    transform: scale(1.2);
+    opacity: 0.5;
+  }
+
+  .together-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    position: relative;
+    z-index: 2;
+  }
+
+  @media (min-width: 768px) {
+    .together-content {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  .together-text {
+    flex: 1;
+  }
+
+  .together-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    background: linear-gradient(to right, var(--color-text), var(--color-pink));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    line-height: 1.2;
+  }
+
+  .together-subtitle {
+    font-size: 1.25rem;
+    color: var(--color-text-secondary);
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  .highlight {
+    color: var(--color-pink);
+    font-weight: 600;
+  }
+
+  .together-actions {
+    color: white;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @media (min-width: 768px) {
+    .together-actions {
+      justify-content: flex-end;
+    }
+  }
+
+  .together-decoration {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 2.5rem;
+    font-family: monospace;
+    font-size: 0.85rem;
+    opacity: 0.3;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+    display: none;
+  }
+
+  @media (min-width: 768px) {
+    .together-decoration {
+      display: block;
+    }
+  }
+
+  .together:hover .together-decoration {
+    opacity: 0.5;
+  }
+
+  .code-line {
+    display: flex;
+    gap: 1rem;
+    line-height: 1.5;
+  }
+
+  .code-number {
+    color: var(--color-text-secondary);
+    opacity: 0.7;
+    min-width: 1rem;
+    text-align: right;
+  }
+
+  .code-text {
+    color: var(--color-text);
+  }
+
+  .code-variable {
+    color: var(--color-pink);
+  }
+
+  .code-value {
+    color: var(--color-purple);
+  }
+
+  .code-function {
+    color: #4cc9f0;
+  }
+</style>

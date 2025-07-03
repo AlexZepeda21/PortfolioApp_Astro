@@ -11,28 +11,6 @@
   --transition-standard: all 0.3s ease;
 }
 
-.Sections {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 2rem 1rem;
-}
-
-.s1,
-.s2,
-.s3,
-.s4,
-.s5,
-.s6 {
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  margin: 5px;
-  min-height: 100vh;
-}
-
 .row {
   width: 100%;
   display: flex;
@@ -43,35 +21,7 @@
 }
 
 /* ---------------------------------------------------------------- */
-.s1 {
-  color: white;
-  text-align: center;
-}
 
-.s2 {
-  color: white;
-  text-align: center;
-}
-
-.s3 {
-  color: white;
-  text-align: center;
-}
-
-.s4 {
-  color: white;
-  text-align: center;
-}
-
-.s5 {
-  color: white;
-  text-align: center;
-}
-
-.s6 {
-  color: white;
-  text-align: center;
-}
 
 /* Section1 ------------------------------------------------------  */
 

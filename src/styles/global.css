@@ -6,7 +6,7 @@ html, body {
   background: linear-gradient(to bottom, #070d1e 0%, #0a0f2b 50%, #05070c 100%);
 }
 
-/* #starsCanvas {
+#starsCanvas {
   position: fixed;
   top: 0;
   left: 0;
@@ -14,7 +14,7 @@ html, body {
   height: 100%;
   pointer-events: none;
   max-height: 100vh;
-} */
+} 
 
 html{
   background: url('../assets/images/star-pattern.png') repeat, #0a0f1c;

@@ -1,25 +1,3 @@
-.list {
-    display: flex;
-    width: 100%;
+.categories-list {
     justify-content: center;
-}
-
-.item {
-    margin: 2px;
-    padding: 10% 35px;
-    color: white;
-    font-family: 'Fuente4';
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 35px;
-    border: 1px solid #3b4d6d;
-    box-shadow: 0 0 0 #fec1958c;
-    transition: all 0.3s ease-in-out;
-    width: 175px; /* Ancho máximo fijo para mantener alineación */
-    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
-    text-overflow: ellipsis; /* Añade '...' si el texto es demasiado largo */
-}
-
-.item:hover {
-    border: 1px solid;
 }
