@@ -34,6 +34,7 @@ background: linear-gradient(to right, var(--color-purple), var(--color-pink));
   transition: all 0.3s ease-in-out;
   cursor: pointer;
   margin-top: 10px;
+  text-decoration: none;
 }
 
 .tech {
@@ -51,13 +52,14 @@ background: linear-gradient(to right, var(--color-purple), var(--color-pink));
   filter: drop-shadow(0 0 0 #fffdef);
   z-index: -5;
   transition: all 1s cubic-bezier(0.05, 0.83, 0.43, 0.96);
+
 }
 
 .star-2 {
   position: absolute;
   top: 1%;
-  left: 45%;
-  width: 15px;
+  left: 50%;
+  width: 10px;
   height: auto;
   filter: drop-shadow(0 0 0 #fffdef);
   z-index: -5;
@@ -121,7 +123,7 @@ background: linear-gradient(to right, var(--color-purple), var(--color-pink));
 
 .buttonSpecial:hover {
   background: transparent;
-  color: #ffffff;
+  color: #eff0f2;
   box-shadow: 0 0 25px #ffffff;
   border-color: white;
   border: 1px solid;
@@ -131,33 +133,36 @@ background: linear-gradient(to right, var(--color-purple), var(--color-pink));
 .buttonSpecial:hover .star-1 {
   position: absolute;
   top: -80%;
-  left: -25%;
-  width: 25px;
+  left: -14%;
+  width: 50px;
   height: auto;
   z-index: 2;
+  color: #d4f405;
 }
 
 /* JS */
 .buttonSpecial:hover .star-2 {
   position: absolute;
-  top: -25%;
+  top: -15%;
   left: 5%;
-  width: 15px;
+  width: 0px;
   height: auto;
-  z-index: 2;
+  z-index: 4;
+  color: #e70707;
 }
 
-/* SQL */
+/* C# */
 .buttonSpecial:hover .star-3 {
   position: absolute;
   top: 65%;
   left: 25%;
-  width: 5px;
+  width: 15px;
   height: auto;
   z-index: 2;
+  color: #5aa921;
 }
 
-/* C# */
+/* SQL */
 .buttonSpecial:hover .star-4 {
   position: absolute;
   top: 60%;
@@ -165,9 +170,10 @@ background: linear-gradient(to right, var(--color-purple), var(--color-pink));
   width: 8px;
   height: auto;
   z-index: 2;
+  color: #4de004;
 }
 
-/* C++ */
+/* PHP */
 .buttonSpecial:hover .star-5 {
   position: absolute;
   top: 25%;
@@ -175,9 +181,10 @@ background: linear-gradient(to right, var(--color-purple), var(--color-pink));
   width: 15px;
   height: auto;
   z-index: 2;
+  color: #ea4b06;
 }
 
-/* PHP */
+/* C++ */
 .buttonSpecial:hover .star-6 {
   position: absolute;
   top: -3%;
@@ -185,10 +192,11 @@ background: linear-gradient(to right, var(--color-purple), var(--color-pink));
   width: 0px;
   height: auto;
   z-index: 2;
+  color: #af7a0f;
 }
 
 
-/* PHP */
+/* C */
 .buttonSpecial:hover .star-7 {
   position: absolute;
   top: -40%;
@@ -196,9 +204,11 @@ background: linear-gradient(to right, var(--color-purple), var(--color-pink));
   width: 0px;
   height: auto;
   z-index: 2;
+  color: #ffffff;
 }
 
 
+
 .fil0 {
-  fill: #fffdef;
+  fill: #c6bc717c;
 }

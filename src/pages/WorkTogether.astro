@@ -1,6 +1,10 @@
 ---
-import BtnGmail from "../components/Buttons/BtnGmail.astro";
-import BtnLinkedin from "../components/Buttons/BtnLinkedin.astro";
+import BtnCode from "../components/Buttons/BtnCode";
+
+const nameButton1 = "Via Email";
+const nameButton2 = "Via Linkedin";
+const link1 = "https://www.linkedin.com/in/manuel-zepeda-79383a33a/";
+const link2 = "https://www.linkedin.com/in/manuel-zepeda-79383a33a/";
 ---
 
 <div class="together-container">
@@ -17,8 +21,8 @@ import BtnLinkedin from "../components/Buttons/BtnLinkedin.astro";
       </div>
       
       <div class="together-actions">
-        <BtnGmail />
-        <BtnLinkedin />
+        <BtnCode nameButton={nameButton1} link={link1}/>
+        <BtnCode nameButton={nameButton2} link={link2}/>
       </div>
     </div>
     

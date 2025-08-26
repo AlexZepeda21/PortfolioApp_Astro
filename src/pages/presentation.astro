@@ -1,6 +1,10 @@
 ---
 import miImg from "../assets/images/miImg.png";
-import BtnDisponible from "../components/Buttons/BtnDisponible.astro";
+import BtnCode from "../components/Buttons/BtnCode";
+
+
+const nameCode = "Disponible para trabajar";
+const link = "https://www.linkedin.com/in/manuel-zepeda-79383a33a/";
 ---
 
 <div class="presentation-container">
@@ -13,13 +17,9 @@ import BtnDisponible from "../components/Buttons/BtnDisponible.astro";
           alt="Manuel Zepeda"
         />
       </div>
-      <a
-        href="https://www.linkedin.com/in/manuel-zepeda-79383a33a/"
-        aria-label="Perfil de LinkedIn"
-        class="styleButton"
-      >
-        <BtnDisponible />
-      </a>
+      <div>
+        <BtnCode nameButton={nameCode} link={link} client:load />
+      </div>
     </div>
 
     <div class="info-section">
@@ -45,15 +45,6 @@ import BtnDisponible from "../components/Buttons/BtnDisponible.astro";
       prácticas de programación para llevar tus aplicaciones al siguiente nivel.
     </p>
   </div>
-
-  <!--  <div class="skills-container">
-    <div class="skill-tag">JavaScript</div>
-    <div class="skill-tag">HTML/CSS</div>
-    <div class="skill-tag">React</div>
-    <div class="skill-tag">Node.js</div>
-    <div class="skill-tag">Astro</div>
-  </div>
-</div> -->
 
   <style>
     /* Container styles */

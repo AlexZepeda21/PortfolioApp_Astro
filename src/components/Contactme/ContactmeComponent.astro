@@ -1,12 +1,15 @@
 ---
 //components
-import BtnContactame from "../Buttons/BtnContactame.astro";
 
 //Bootstrap
 import "bootstrap/dist/css/bootstrap.min.css";
 
 //CSS
 import "../../styles/contactme.css";
+import Btncode from "../Buttons/BtnCode";
+
+const nameCode = "Contactame";
+const link = "https://www.linkedin.com/in/manuel-zepeda-79383a33a/";
 ---
 
 <section class="form-wrapper">
@@ -61,7 +64,7 @@ import "../../styles/contactme.css";
       </div>
 
       <div style="color: white;">
-        <BtnContactame />
+        <Btncode nameButton={nameCode}, link={link}/>
       </div>
     </div>
   </form>
